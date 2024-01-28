@@ -7,8 +7,40 @@
   <script src="hangman.js" defer></script>
 </head>
 <body>
+  <div class="container">
+    <div class="hangman-box">
   <h1>HANGMAN GAME</h1>
+  <img src="#" draggable="false" alt="hangman-img">
   <p>Click the start button to play the game.</p>
   <button onclick="initializeGame()">Start Game</button>
+
+  <div class="hangman-stats">
+    <div class="hangerman-stats-games">
+      <i class="fas fa-gamepad"></i>
+      <p>Games: <span class="number-of-games">0</span></p>
+    </div>
+    <div class="hangman-stats-wins">
+      <i class="fas fa-trophy"></i>
+      <p>Wins: <span class="wins">0</span></p>
+
+    <div class="hangman-stats-loses">
+      <i class="fas fa-skull-crossbones"></i>
+      <p>Loses: <span class="losses">0</span></p>
+      </div>
+
+<button class="btn-delete-statistics" onclick="confirmClearLocalStorage()">Delete statitics</button>
+</div>
+
+<div class="hangman-box">
+  <ul class="word-display"></ul>
+
+  <h4 class="hint-text">Hint: </b></b></h4>
+
+  <div class="keyboard"></div>
+  
+</div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
