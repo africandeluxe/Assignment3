@@ -302,3 +302,29 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
   padding: 10px 18px;
   
 }
+
+@media (max-width: 768px) {
+  .hangman-box {
+    text-align: center;
+  }
+  .hangman-box img {
+    max-width: 150px;
+  }
+  .fa-gamepad,
+  .fa-trophy,
+  .fa-skull-crossbones {
+    font-size: 16px;
+  }
+  .hangman-stats p {
+    padding: 5px;
+  }
+  .hangman-box .keyboard {
+    max-height: 60%;
+  }
+  .container .hangman-box h1 {
+    display: none;
+  }
+  .hangman-modal .content {
+    width: 70%;
+  }
+}
