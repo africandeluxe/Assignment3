@@ -50,7 +50,7 @@ body {
   max-width: 270px;
 }
 
-.hangerman-box h1 {
+.hangman-box h1 {
 font-size: var(--font-size-h1);
 margin-bottom: 20px;
 text-align: center;
@@ -59,7 +59,7 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
 
 }
 
-.hangerman-box .word-display{
+.hangman-box .word-display{
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +85,7 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
   margin: -40px 0 35px;
 }
 
-.hangerman-box h4 {
+.hanger-box h4 {
   font-size: var(--font-size);
   font-weight: 400;
   margin-bottom: 15px;
@@ -93,17 +93,17 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
 
 }
 
-.hangerman-box h4 b, .hangerman-box .guess-text {
+.hanger-box h4 b, .hanger-box .guess-text {
   font-weight:  700;
 
 }
 
-.hangerman-box .guess-text {
+.hanger-box .guess-text {
   font-size: var(--font-size-smaller);
 
 }
 
-.hangerman-box .guess-text b {
+.hanger-box .guess-text b {
   color: var(--color-guesses-text);
 
 }
@@ -120,7 +120,7 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
 
 }
 
-:where(.hangerman-modal, .keyboard) button {
+:where(.hanger-modal, .keyboard) button {
   background-color: var(--color-keyboard-button);
   border-radius: 4px;
   border: none;
@@ -155,7 +155,7 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
 
 }
 
-.hangerman-modal {
+.hangman-modal {
   align-items: center;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -172,7 +172,7 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
   z-index: 9999;
 }
 
-.hangerman-modal .content {
+.hanger-modal .content {
   background: var(--color-modal-background);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -182,18 +182,18 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
   width: 100%;
 }
 
-.hangerman-modal img {
+.hangman-modal img {
   margin-bottom: 20px;
   max-width:  130px;
 
 }
 
-.hangerman-modal img[scr="images/victory.gif"] {
+.hangman-modal img[scr="images/victory.gif"] {
   margin-left: -10px;
 
 }
 
-.hangerman-modal h4 {
+.hangman-modal h4 {
   font-size: var(--font-size);
 
 }
@@ -204,12 +204,12 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
   margin: 15px 0 30px;
 }
 
-.hangerman-modal p b {
+.hangman-modal p b {
   color: var(--color-background);
   font-weight: 700;
 }
 
-.hangerman-modal .content button {
+.hangman-modal .content button {
   padding:  8px 20px;
   display: block;
   margin: 0 auto;
@@ -294,11 +294,11 @@ text-shadow: rgba(0, 0, 0, 0.16) 0px 1 px 4px;
 
 }
 
-.hangerman-modal img {
+.hangman-modal img {
   max-width: 120px;
 }
 
-.hangerman-modal button {
+.hangman-modal button {
   padding: 10px 18px;
   
 }
