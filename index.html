@@ -4,31 +4,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hangman Game JavasScript</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="script/hangman.js" defer></script>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <script src="./script/hangman-database.js" defer></script>
+  <script src="./script/hangman.js" defer></script>
+
 </head>
 <body>
 
   <div class="hangman-modal">
-  <div class="container">
     <div class="content">
-      <img src="#" alt="gif" />
+      <img src="images/lost.gif" alt="gif" />
+      <h4>Game Over!</h4>
+      <p><b>Maybe next time! The correct word was:</b></p>
+      <button class="play-again">Play Again</button>
+      </div>
     </div>
+
+    <div class="container">
     <div class="hangman-box">
   <h1>HANGMAN GAME</h1>
-  <img src="#" draggable="false" alt="hangman-img">
-  <p>Click the start button to play the game.</p>
-  <button onclick="initializeGame()">Start Game</button>
-
-  </div>
-  </div>
-</div>
+  <img src="images/hangman-0.svg" draggable="false">
 
   <div class="hangman-stats">
     <div class="hangerman-stats-games">
-      <i class="fas fa-gamepad"></i>
+      <i class="fas fa-gamepad">
+      </i>
       <p>Games: <span class="number-of-games">0</span></p>
     </div>
-    </div>
+
 
     <div class="hangman-stats-wins">
       <i class="fas fa-trophy"></i>
@@ -37,19 +46,24 @@
 
     <div class="hangman-stats-loses">
       <i class="fas fa-skull-crossbones"></i>
-      <p>Loses: <span class="losses">0</span></p>
+      <p>Loses: <span class="loses">0</span></p>
+      </div>
       </div>
 
-<button class="btn-delete-statistics" onclick="confirmClearLocalStorage()">Delete statitics</button>
+<button class="btn-delete-statistics" 
+onclick="confirmClearLocalStorage()">Delete statitics</button>
 
 <div class="hangman-box">
   <ul class="word-display"></ul>
 
-  <h4 class="hint-text">Hint: </b></b></h4>
+  <h4 class="hint-text">Hint: <b></b></h4>
+
+  <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
 
   <div class="keyboard"></div>
   
 </div>
+    </div>
     </div>
 </body>
 </html>
